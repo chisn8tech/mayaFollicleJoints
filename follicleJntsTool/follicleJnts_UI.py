@@ -39,7 +39,7 @@ import pymel.core as pm
 import maya.OpenMayaUI as mayaUI
 from maya.app.general.mayaMixin import MayaQWidgetDockableMixin
 
-import follicleJnts as folEng
+import follicleJntsTool.follicleJnts as folEng
 reload(folEng)
 
 

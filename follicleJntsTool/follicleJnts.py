@@ -22,7 +22,7 @@ import string
 
 import pymel.core as pm
 
-import customQueries as cq
+from follicleJntsTool import customQueries as cq
 reload(cq)
 
 
