@@ -1,5 +1,6 @@
 # mayaFollicleJoints
 Follicle Joints Tool.
+
 Author: Nathan Chisholm (New Zealand)
 
 A tool for working with joints which slide along surfaces in Autodesk Maya, using 'follicle' nodes in a similar way to traditional Maya 'ribbon' rig setups.
