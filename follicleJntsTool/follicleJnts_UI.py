@@ -1,7 +1,7 @@
 """
 #
 # follicleJnts_UI.py - 2015 Nathan Chisholm
-# Version 1.02.00
+# Version 1.10.00
 # PySide2 variant
 #
 # @author Nathan Chisholm
