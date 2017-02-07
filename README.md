@@ -1,18 +1,18 @@
 # mayaFollicleJoints
-Follicle Joints Tool.
+## Follicle Joints Tool.
 
-Author: Nathan Chisholm (New Zealand)
+_Author: Nathan Chisholm (New Zealand)_ 
 
-A tool for working with joints which slide along surfaces in Autodesk Maya, using 'follicle' nodes in a similar way to traditional Maya 'ribbon' rig setups.
+A tool for working with joints which slide along surfaces in Autodesk Maya, using 'follicle' nodes in a similar way to traditional Maya 'ribbon' rig setups.  
 
-Uses:
+### Uses:
   - Simple 'ribbon' setups (create a nurbs patch, add follicle joints using the tool, skin the nurbs path to follow upper and lower controls, and skin the mesh (or other ribbons) to the follicle joints. Predictable technique for stretchy spines, bendy arms/legs, and wires/pipes that join at both ends
   - More complex setups eg. flags which may use a grid of follicles;
   - Face rigs, where the skin slides over an underlying skeleton/teeth proxy nurbs shape with the use of eg. driven keys (Don't let me hear you call them 'Set Driven Keys'!)
   - It may be preferable to code custom classes that derive from the follicle joint class for more complex tasks, eg. tentacles, where uneven scale of the joints etc. may be necessary. How you do this is up to you.
   - And possibly many more. Some uses can be replicated in a similar way in newer Maya versions with the combination of shrinkwrap and wrap deformers, but using follicle joints may be faster and more controllable/weightable.
  
-Features:
+### Features:
   - Follicles can be attached to both polygons and nurbs surfaces (although nurbs are preferred to avoid faceting (and depending on pipeline, caching) issues)
   - Nurbs surfaces do not have to be normalised (0 to 1 on U and V) although warnings may be printed if they aren't
   - Different modes of working with follicles in terms of hierarchy. As Maya in some versions uses a different RMB marking menu when clicking on a joint than when on a follicle, parenting a follicle 'shape' directly under a joint 'transform' makes that joint be seen as a follicle; thus disabling the skinning menus.
@@ -23,4 +23,9 @@ Features:
   - Auto renaming function to name follicles by position relative to the central U UV value of the surface patch (L_, M_, R_ or custom prefixes) symmetrically.
   - Follicles can be transferred from one surface to another, either by closest point or by UV parameters.
  
-The intention is for this script to be used as an API/library of sorts for other tools, eg. facial riggers. As per the license, the script can be used as a library of a commercial tool, however distribution under the same terms would be preferred so that it can benefit more people.
+_The intention is for this script to be used as an API/library of sorts for other tools, eg. facial riggers. As per the license, the script can be used as a library of a commercial tool, however distribution under the same terms would be preferred so that it can benefit more people._
+
+### Use Directions:
+ * For those less familiar with git, choose 'Clone or Download' and download it as a zip file. The follicleJntsTool folder/package will need to be either put into a Maya script folder, or any other directory on Maya's Python Path eg. by `sys.path.append(...)`
+ * Refer to README.py for the Python command(s) to use the tool.
+ * For a demonstration of the tool, see https://vimeo.com/nathanchisholm/folliclejoints; the code has been adjusted since the demo, but the tool operation is the same between that version and the new Maya 2017 one.
