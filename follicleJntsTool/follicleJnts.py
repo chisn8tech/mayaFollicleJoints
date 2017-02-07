@@ -1,13 +1,12 @@
 """
 #
 # follicleJnts.py
-# Version 1.02.00
+# Version 1.10.00
 #
-# Based off my earlier follicleTools.py tool, version 1.09.00, with 
+# Based off my earlier follicleTools.py tool, with 
 # significant improvements, especially in terms of versatility.
 #
 # @author Nathan Chisholm
-# @email nathanchisholm.cgartist@gmail.com
 # @web nathanchisholm.weebly.com
 #
 # --------------------------------------------------------------------

@@ -1,31 +1,15 @@
 """
 #
-# follicleJnts_UI.py - 2015 Nathan Chisholm
+# follicleJnts_UI.py - 2017 Nathan Chisholm
 # Version 1.10.00
 # PySide2 variant
 #
 # @author Nathan Chisholm
-# @email nathanchisholm.cgartist@gmail.com
 # @web nathanchisholm.weebly.com
 #
 # --------------------------------------------------------------------
 # Scripts for dealing with joint follicles on patches or ribbons.
 #
-
-
-Log:
- 1.01: UI changed to collapsable tabs, so that both sections can be
-    visible at once (more practical to work with than tabs when tested.)
- 
- 1.10: UI adapted for Maya 2017 and PySide2/Qt5; 
-    Qt designer output merged into this script and simplified.
-    Collapsable sections made into derived widgets to be tidier.
-    Tabs keep focus when docked (though Maya's own don't)
-    
-    Due to Maya 2017 allowing things to be docked anywhere, at current the
-    attribute editor must be open for the UI to be opened non-floating, to
-    define where it goes. (Default is to load floating anyway)
-
 """
 
 

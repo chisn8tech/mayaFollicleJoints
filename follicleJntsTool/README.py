@@ -1,13 +1,12 @@
 """
 #
 # follicleJntsTool
-# Version 1.02.00
+# Version 1.10.00
 #
-# Based off my earlier follicleTools.py tool, version 1.09.00, with 
+# Based off my earlier follicleTools.py tool, with 
 # significant improvements, especially in terms of versatility.
 #
 # @author Nathan Chisholm
-# @email nathanchisholm.cgartist@gmail.com
 # @web nathanchisholm.weebly.com
 #
 # --------------------------------------------------------------------
@@ -25,7 +24,7 @@ Maya 2011 32bit (Windows 7) - PyQt version: 4.7.3 - Qt version '4.5.3'
 Maya 2013 64bit (Windows 7) - PyQt version: 4.9.5 - Qt version '4.7.1'
  - sip version '4.14', API 2
 
-Current Version supports:
+Current Version (1.10.00) supports:
 Maya 2017 64bit (Windows 7) - Native Maya PySide2 and Shiboken2 (Qt5):
 #### Closing when no attribute editor causes glitch?
 
@@ -129,11 +128,30 @@ Log:
 30.09.15 - Nathan
 - Added support for linear UV offset when swapping surfaces by closest
  point
+
 01.10.15
 - Fixed duplicate to work for FollicleJoints with offsets driving other
  FollicleJoints
+
 06.10.15
 - Made mirrored follicle joint offsets work in mirrored directions
+
+--.--.16
+ 1.01: UI changed to collapsable tabs, so that both sections can be
+    visible at once (more practical to work with than tabs when tested.)
+
+ 1.10: UI adapted for Maya 2017 and PySide2/Qt5; 
+    Qt designer output merged into this script and simplified.
+    Collapsable sections made into derived widgets to be tidier.
+    Tabs keep focus when docked (though Maya's own don't)
+    
+    Due to Maya 2017 allowing things to be docked anywhere, at current the
+    attribute editor must be open for the UI to be opened non-floating, to
+    define where it goes. (Default is to load floating anyway)
+	
+06.02.17: Code reorganised for public use and released on github.
+	
+
 
 # To Do:
 - populate other attrs created through 'new'?
